@@ -311,6 +311,7 @@ public class DatosPersonales extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         jLabel12.setText("Telefono");
 
+        jcbRelacion.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         jcbRelacion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Padre", "Madre", "Hermano", "Hermana", "Hijo", "Hija", "Primo", "Prima", "Abuelo", "Abuela", "Pareja" }));
 
         javax.swing.GroupLayout jpnReferenciaLayout = new javax.swing.GroupLayout(jpnReferencia);
