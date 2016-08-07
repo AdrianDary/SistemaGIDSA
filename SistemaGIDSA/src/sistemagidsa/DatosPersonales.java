@@ -74,6 +74,8 @@ public class DatosPersonales extends javax.swing.JFrame {
         txtTelefonoReferencia = new javax.swing.JTextField();
         jcbRelacion = new javax.swing.JComboBox<>();
         jLabel22 = new javax.swing.JLabel();
+        jbtGuardar = new javax.swing.JButton();
+        jbtCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -352,6 +354,10 @@ public class DatosPersonales extends javax.swing.JFrame {
         jLabel22.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel22.setText("Información de Empleados");
 
+        jbtGuardar.setText("Guardar");
+
+        jbtCancelar.setText("Cancelar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -359,13 +365,18 @@ public class DatosPersonales extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lpnDatosPersonales, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jpnReferencia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(223, 223, 223)
-                        .addComponent(jLabel22)))
+                        .addComponent(jLabel22))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jbtGuardar)
+                                .addGap(37, 37, 37)
+                                .addComponent(jbtCancelar))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(lpnDatosPersonales, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jpnReferencia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                 .addContainerGap(53, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -377,7 +388,11 @@ public class DatosPersonales extends javax.swing.JFrame {
                 .addComponent(lpnDatosPersonales, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jpnReferencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jbtGuardar)
+                    .addComponent(jbtCancelar))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
 
         pack();
@@ -442,7 +457,9 @@ public class DatosPersonales extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton jbtCancelar;
     private javax.swing.JButton jbtFoto;
+    private javax.swing.JButton jbtGuardar;
     private javax.swing.JComboBox<String> jcbDiscapacidad;
     private javax.swing.JComboBox<String> jcbEstadoCivil;
     private javax.swing.JComboBox<String> jcbGenero;
